@@ -231,23 +231,23 @@
 //     }
 // }
 
-const users = [
-  {
-    id: 1,
-    name: "Ali",
-    age: 20
-  },
-  {
-    id: 2,
-    name: "Vali",
-    age: 25
-  },
-  {
-    id: 3,
-    name: "Sardor",
-    age: 30
-  }
-];
+// const users = [
+//   {
+//     id: 1,
+//     name: "Ali",
+//     age: 20
+//   },
+//   {
+//     id: 2,
+//     name: "Vali",
+//     age: 25
+//   },
+//   {
+//     id: 3,
+//     name: "Sardor",
+//     age: 30
+//   }
+// ];
 
 // for (let i = 0; i < users.length; i++) {
 //     if (users[i].age >= 25){
@@ -273,7 +273,23 @@ const users = [
 // }
 
 
-function createNewUser(id) {
+// function createNewUser(id,name,age) {
+
+//   const newUser = {
+//     id: id,
+//     name: name,
+//     age: age
+//   }
+
+//   users.push(newUser)
+
+//   return users
     
-}
+// }
+
+// createNewUser(4, "Jasur", 22)
+// console.log(users);
+
+
+
 
