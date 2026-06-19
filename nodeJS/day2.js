@@ -29,16 +29,16 @@ const users = [
 //   res.send(users);
 // });
 
-app.del("/users:id", (req, res) => {
-  const id = Number(req.params.id);
-  const user = users.find((u) => u.id === id);
+// app.del("/users:id", (req, res) => {
+//   const id = Number(req.params.id);
+//   const user = users.find((u) => u.id === id);
 
-  if (user) {
-    user.name = req.body.name;
-  }
+//   if (user) {
+//     user.name = req.body.name;
+//   }
 
-  res.send(user);
-});
+//   res.send(user);
+// });
 
 app.listen(3000, () => {
   console.log("server runnning...");
