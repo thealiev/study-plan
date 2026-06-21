@@ -61,13 +61,84 @@
 
 // console.log(countVowel("JavaScript"));
 
-function factorial(num) {
-  let result = 1;
-  for (let i = 1; i <= num; i++) {
-    result *= i;
+// function factorial(num) {
+//   let result = 1;
+//   for (let i = 1; i <= num; i++) {
+//     result *= i;
+//   }
+
+//   return result;
+// }
+
+// console.log(factorial(5));
+
+// function isPrime(num) {
+//   if (num < 2) {
+//     return false;
+//   }
+
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// function isPrime(data) {
+//   if (data < 2) {
+//     return false
+//   }
+
+//   for (let i = 2; i < num; i++){
+//     if (data % 2 === 0) {
+//       return false
+//     }
+//   }
+
+//   return true
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6]
+
+// function isEven(num) {
+//   let result = []
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0)
+//       result.push(numbers[i])
+//   }
+
+//   return result
+// }
+
+// function isPalidrome(str) {
+//   let reversed = str.split("").reverse().join("")
+
+//   return str === reversed
+// }
+
+// isPalindrome("anna");
+// isPalindrome("hello");
+// isPalindrome("racecar");
+
+
+const object = {
+  a: 10,
+  b: 20,
+  c: 30,
+};
+
+function getObject(object) {
+  let result = 0
+  
+  for (let i = 0; i < object.length; i++){
+    result += obj[key]
   }
 
-  return result;
+  return result
 }
 
-console.log(factorial(5));
+console.log(getObject(object));
+
