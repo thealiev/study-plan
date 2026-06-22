@@ -123,22 +123,153 @@
 // isPalindrome("hello");
 // isPalindrome("racecar");
 
+// const object = {
+//   a: 10,
+//   b: 20,
+//   c: 30,
+// };
 
-const object = {
-  a: 10,
-  b: 20,
-  c: 30,
-};
+// function getObject(object) {
+//   let result = 0;
 
-function getObject(object) {
-  let result = 0
-  
-  for (let i = 0; i < object.length; i++){
-    result += obj[key]
-  }
+//   for (let i = 0; i < object.length; i++) {
+//     result += obj[i];
+//   }
 
-  return result
-}
+//   return result;
+// }
 
-console.log(getObject(object));
+// console.log(getObject(object));
+
+// const numbers = [1, 2, 2, 3, 4, 4];
+
+// function duplicateNum(numbers) {
+//   let result = []
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (!result.includes(numbers[i])) {
+//       result.push(numbers[i])
+
+//     }
+
+//   }
+
+//   return result
+
+// }
+
+// function fib(n) {
+//   let a = 0;
+//   let b = 1;
+
+//   for (let i = 2; i <= n; i++) {
+//     let next = a + b;
+//     a = b;
+//     b = next;
+//   }
+
+//   return n === 0 ? 0 : b;
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// function smallNum(numbers) {
+//   let result = numbers[0];
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < result) {
+//       result = numbers[i]
+//     }
+//   }
+
+//   return result;
+// }
+
+// const text = "JavaSciprt - Zor"
+
+// function findText(text) {
+//   return text.length
+
+// }
+
+// console.log(findText(text));
+
+// const obj = {
+//   a: 10,
+//   b: 20,
+//   c: 30,
+// };
+
+// function countKeys(obj) {
+//   return Object.keys(obj).length;
+// }
+
+// console.log(countKeys(obj));
+
+// function secondLarger(arr) {
+//   let max = arr[0];
+//   let secondMax = arr[0];
+
+//   for (let i = 1; i < arr.length; i++) {
+//     let num = arr[i];
+
+//     if (num > max) {
+//       max = num;
+//     } else if (num > secondMax) {
+//       secondMax = num;
+//     }
+//   }
+
+//   return secondMax;
+// }
+
+// function secondLarger(arr) {
+//   let max = Math.max(...arr)
+
+//   let filtered = arr.filter(num => num !== max)
+
+//   return Math.max(...filtered)
+
+// }
+
+// function mergeArray(arr1, arr2) {
+//   let result = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     result.push(arr1[i]);
+//   }
+
+//   for (let i = 0; i < arr2.length; i++) {
+//     result.push(arr2[i]);
+//   }
+
+//   return result;
+// }
+
+let numbers = [-1, 2, -3, -4, 5];
+
+// function minusNum(numbers) {
+//   let result = [];
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < 0) {
+//       result.push(numbers[i]);
+//     }
+//   }
+
+//   return result;
+// }
+
+// function oddNum(numbers) {
+//   let result = 0;
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 !== 0) {
+//       result++;
+//     }
+//   }
+
+//   return result;
+// }
+
+
 
