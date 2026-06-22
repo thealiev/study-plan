@@ -245,13 +245,13 @@
 //   return result;
 // }
 
-let numbers = [-1, 2, -3, -4, 5];
+// let numbers = [-1, 2, -3, -4, 5];
 
 // function minusNum(numbers) {
 //   let result = [];
 
 //   for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] < 0) {
+//     if (numbers[i] % 2 !== 0) {
 //       result.push(numbers[i]);
 //     }
 //   }
@@ -271,5 +271,30 @@ let numbers = [-1, 2, -3, -4, 5];
 //   return result;
 // }
 
+// function countLatter(str, letter) {
+//   let count = 0;
 
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === letter) {
+//       count++
+//     }
+//   }
 
+//   return count;
+// }
+
+// function customMap(arr, callback) {
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     result.push(callback(arr[i]));
+//   }
+
+//   return result;
+// }
+
+function calculatePrice(product) {
+  return product.price * 1.12;
+}
+
+products.map(calculatePrice); 
