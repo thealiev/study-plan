@@ -386,5 +386,72 @@
 
 // console.log(findObj(obj));
 
+// const counter = createCounter();
 
+// function createCounter() {
+//   let count = 0;
 
+//   return function () {
+//     count++;
+//     return count;
+//   };
+// }
+
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+// function debounce(func, delay) {
+//   let timer;
+
+//   return function (...arg) {
+//     clearTimeout(timer);
+
+//     timer = setTimeout(() => {
+//       func.apply(this, args);
+//     }, delay);
+//   };
+// }
+
+// const search = debounce((text) => {
+//   console.log("Searching:", text);
+// }, 500);
+
+// search("j");
+// search("ja");
+// search("jav");
+// search("java");
+
+// function throttle(func, limit) {
+//   let inThrottle = false;
+
+//   return function (...args) {
+//     if (!inThrottle) {
+//       func.apply(this, args);
+
+//       inThrottle = true;
+
+//       setTimeout(() => {
+//         inThrottle = false;
+//       }, limit);
+//     }
+//   };
+// }
+
+// const onScroll = throttle(() => {
+//   console.log("Scrolling...");
+// }, 1000);
+
+const obj = {
+  name: "Ali",
+  info: {
+    age: 20,
+  },
+};
+
+function deepClone(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
+
+console.log(deepClone(obj));
