@@ -293,8 +293,98 @@
 //   return result;
 // }
 
-function calculatePrice(product) {
-  return product.price * 1.12;
-}
+// function customFilter(arr, callback) {
+//   let result = [];
 
-products.map(calculatePrice); 
+//   for (let i = 0; i < arr.length; i++) {
+//     if (callback(arr[i])) {
+//       result.push(arr[i]);
+//     }
+//   }
+
+//   return result;
+// }
+
+// function customReduce(arr, callback) {
+//   let accumulator = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     accumulator = callback(accumulator, arr[i]);
+//   }
+
+//   return result;
+// }
+
+// const text = "javascript";
+
+// function accText(text) {
+//   let freq = {};
+
+//   for (let i = 0; i < text.length; i++) {
+//     let char = text[i];
+
+//     if (freq[char]) {
+//       freq[char] = freq[char] + 1;
+//     } else {
+//       freq[char] = 1;
+//     }
+//   }
+
+//   return freq;
+// }
+
+// console.log(accText(text));
+
+// const obj = [
+//   { name: "Ali", age: 20 },
+//   { name: "Vali", age: 30 },
+// ];
+
+// function findObj(obj) {
+//   let max = obj[0].age;
+
+//   for (let i = 0; i < obj.length; i++) {
+//     if (obj[i].age > max) {
+//       max = obj[i].age;
+//     }
+//   }
+
+//   return max;
+// }
+
+// console.log(findObj(obj));
+
+// const onj = [
+//   { name: "Ali", age: 20 },
+//   { name: "Vali", age: 30 },
+//   { name: "Sardor", age: 25 },
+//   { name: "John", age: 40 },
+// ];
+
+// function finObj(obj) {
+//   let top1 = Infinity;
+//   let top2 = Infinity;
+//   let top3 = Infinity;
+
+//   for (let i = 0; i < obj.length; i++) {
+//     let age = obj[i].age;
+
+//     if (age > top1) {
+//       top3 = top2;
+//       top2 = top1;
+//       top1 = age;
+//     } else if (age > top2) {
+//       top3 = top2;
+//       top2 = age;
+//     } else if (age > top3) {
+//       top3 = age;
+//     }
+
+//     return [top1, top2, top3];
+//   }
+// }
+
+// console.log(findObj(obj));
+
+
+
