@@ -128,5 +128,83 @@ console.log(a+b);
 
 // console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
 
+// const fs = require("fs");
 
-const fs = require('fs');
+// fs.writeFile("hello.txt", "hello world", (err) => {
+//   if (err) throw err;
+//   console.log("fayl yartildi");
+// });
+
+// const fs = require("fs");
+
+// fs.readFile("hello.txt", "utf-8", (err, data) => {
+//   if (err) throw err;
+//   console.log(data);
+// });
+
+// const fs = require("fs");
+
+// fs.appendFile("hello.txt", "hello dinazavor", (err) => {
+//   if (err) throw err;
+//   console.log("salom");
+// });
+
+// const fs = require("fs");
+
+// fs.unlink("hello.txt", (err) => {
+//   if (err) throw err;
+//   console.log("folder ochdi");
+// });
+
+// fs.mkdir("testFolder", (err) => {
+//   if (err) throw err;
+//   console.log("fayl yasaldi");
+// });
+
+// fs.rmdir("testFolder", (err) => {
+//   if (err) throw err;
+//   console.log("fayl ochdi");
+// });
+
+// fs.readdir("nodeJS", (err) => {
+//   if (err) throw err;
+//   console.log("korildi");
+// });
+
+// const obj = {
+//   name: "Ali",
+//   age: 20,
+// };
+
+// const jsonData = JSON.stringify(obj);
+
+// fs.writeFile("data.json", jsonData, (err) => {
+//   if (err) throw err;
+//   console.log("tayyor");
+// });
+
+// const obj = {
+//   name: "Ali",
+//   age: 20,
+// };
+
+// fs.readFile("data.json", "utf-8", (err, data) => {
+//   if (err) throw err;
+
+//   const obj = JSON.parse(data);
+//   console.log(data);
+// });
+
+// const http = require("http");
+// const PORT = 3000;
+
+// const server = http.createServer((req, res) => {
+//   res.end("hello world");
+// });
+
+// server.listen(PORT, "localhost", () => {
+//   console.log(`server running`);
+// });
+
+
+
