@@ -1,0 +1,17 @@
+{
+    "name": "com.myorg.epamUI5project",
+    "scripts": {
+        "build": "mbt build --mtar com.myorg.epamUI5project.mtar",
+        "build:workspaces": "npm run build --workspaces --if-present",
+        "deploy": "cf deploy mta_archives/com.myorg.epamUI5project.mtar --retries 0",
+        "lint": "npm run lint --workspaces --if-present",
+        "ui5lint": "npm run ui5lint --workspaces --if-present",
+        "start:UI5app": "npm start --workspace UI5app"
+    },
+    "dependencies": {
+        "mbt": "^1"
+    },
+    "workspaces": [
+        "UI5app"
+    ]
+}

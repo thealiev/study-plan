@@ -142,14 +142,10 @@ console.log(a+b);
 //   console.log(data);
 // });
 
-// const fs = require("fs");
-
 // fs.appendFile("hello.txt", "hello dinazavor", (err) => {
 //   if (err) throw err;
 //   console.log("salom");
 // });
-
-// const fs = require("fs");
 
 // fs.unlink("hello.txt", (err) => {
 //   if (err) throw err;
@@ -206,5 +202,94 @@ console.log(a+b);
 //   console.log(`server running`);
 // });
 
+// const http = require("http");
+// const app = express();
+// const PORT = 3000;
 
+// const server = http.createServer((req, res) => {
+//   if (req.url === "/") {
+//     res.end("hello world");
+//   } else if (req.url === "/about") {
+//     res.end("hello world");
+//   } else if (req.url === "/contact") {
+//     res.end("contact page");
+//   } else {
+//     res.end("404 nout found");
+//   }
 
+// });
+
+// const server = http.createServer((req, res) => {
+//   console.log("URL:", req.url);
+//   console.log("Method:", req.method);
+
+//   res.end("OK");
+// });
+
+// const express = require("express");
+// const app = express();
+// const port = 3000;
+
+// app.get("/", (req, res) => {
+//   const name = req.query.name;
+//   const age = req.query.age;
+
+//   res.send(`Name: ${name}, ${age}`);
+// });
+
+// app.listen(port, () => {
+//   console.log(`server running ${port}`);
+// });
+
+const express = require("express");
+const fs = require("fs");
+const app = express();
+const port = 3000;
+
+// app.get("/date", (req, res) => {
+//   res.send(new Date().toLocaleString());
+// });
+
+// app.get("/random", (req, res) => {
+//   const random = Math.floor(Math.random() * 180) + 1;
+
+//   res.send(random);
+// });
+
+// const myPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     const success = Math.random() > 0.5;
+
+//     if (success) {
+//       resolve("ishlavotti");
+//     } else {
+//       reject(new Error("ishlamayapti"));
+//     }
+//   }, 1000);
+// });
+
+// myPromise
+//   .then((result) => console.log("success:", result))
+//   .catch((error) => console.log("error", error.message));
+
+// const promise = new Promise((resolve) => {
+//   setTimeout(() => {
+//     resolve("ish tugadi");
+//   }, 1000);
+// });
+
+// async function test() {
+//   const result = await promise;
+//   console.log(result);
+// }
+
+// test();
+
+fs.readFile("text.txt", "utf-8", (err, data) => {
+  if (err) throw err;
+  res.end(data);
+});
+
+app.listen(port, () => {
+  console.log(`server running ${port}`);
+});
